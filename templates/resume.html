@@ -1,0 +1,64 @@
+<html>
+{% extends "base.html" %}
+
+{% block title %}Resume {% endblock %}
+
+
+{% block content %}
+    <head>
+
+        <style>
+            .links { text-align: center}
+            .links {background-color: orange}
+            h1 { text-align: center}
+            padding-top: 20px;
+             padding-bottom: 20px;
+        </style>
+        <title>Corey Taylor Resume</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="links"><a href="#obj" >Objectives</a> - <a href="#exp" >Experience</a>
+         - <a href="#edu" >Education</a> - <a href="#skl" >Skills</a> </div>
+        <h1>Corey J. Taylor</h1>
+        <div class="links"> 443-243-0033 - 2225 4th Street NW, Washington DC, 20059 - <a href="mailto:coreyjt301@gmail.com">coreyjt301@gmail.com</a>
+        </div>
+        <h2 id="obj">Objectives</h2>
+        <ul>
+            <li>Create a web based resume for Intro to Web Design</li>
+        </ul>
+        <h2 id="exp">Experience</h2>
+        <ul>
+            <li>National Museum of the American Indian, IT Applications, Govt. Contractor</li>
+                <ul>
+                    <li>Work with Project Management, Database Management, and Business Intelligence software</li>
+                    <li>Developed analytical and technical skills</li>
+                    <li>Conduct maintenance and updates on NMAI intranet website</li>
+                </ul>
+            <li>KPMG Future Diversity Leadership Conference 2016</li>
+                <ul>
+                    <li>Developed leadership and presentation skills</li>
+                </ul>
+        </ul>
+        <h2 id="edu">Education</h2>
+        <ul>
+            <li>Howard University</li>
+            <ul>
+                <li> Computer Information Systems major</li>
+                <li>3.56 GPA</li>
+                <li>Class of 2019</li>
+            </ul>
+        </ul>
+        <h2 id="skl">Skills</h2>
+        <ul>
+            <li>Microsoft Office</li>
+            <li>Linux Command Line</li>
+            <li>Network Analysis (Wireshark)</li>
+            <li>Java and JavaScipt Programming</li>
+            <li>Database Management Software</li>
+            <li>SiFT and Remnux Workstation</li>
+        </ul>
+    </body>
+    {% endblock %}
+</html>

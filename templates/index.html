@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome to {% endblock %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Welcome!</h1>
+  <p>Resume/Transcript by Corey Taylor</p>
+  <p><button type="button" class="btn btn-default"> <a href="/about">Learn more</a></button></p>
+  <img src = http://www.logodesignblog.net/logos/howard-university-logo.jpg width="500" height ="300" align="center"/>
+</div>
+    <div class="center">
+      <div class="row">
+        {% for listing in listings %}
+          <div class="col-md-3">
+            <div class="thumbnail">
+                  <div class="caption">
+                    <h3><a href="{{ url_for('listing_show', listing_id=listing.id) }}">{{ listing.model }}</a></h3>
+                    <p>{{ listing.location }}</p>
+                    <p>{{listing.description}}</p>
+                    <p> Click to See More Details</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+{% endblock %}
